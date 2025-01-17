@@ -50,7 +50,7 @@ This repository contains a comprehensive collection of Whole Genome Sequencing (
 ## Pan-cancer studies, reviews, methods and other interesting reads
 - Optimized whole-genome sequencing workflow for tumor diagnostics in routine pathology practice. [Samsom et al, 2024](https://www.nature.com/articles/s41596-023-00933-5)
 - Pan-cancer whole-genome comparison of primary and metastatic solid tumours. [Martínez-Jiménez et al, 2023](https://www.nature.com/articles/s41586-023-06054-z)
-- Hartwig Medical tools. (HMFtools-GitHub)[https://github.com/hartwigmedical/hmftools]
+- Hartwig Medical tools. [HMFtools-GitHub](https://github.com/hartwigmedical/hmftools)
 - Computational analysis of cancer genome sequencing data. [Cortés-Ciriano et al, 2021](https://www.nature.com/articles/s41576-021-00431-y)
 - Cancer Genome Evolutionary Trajectories in Metastasis. [Birkbakand and McGranahan, 2020](https://pubmed.ncbi.nlm.nih.gov/31935374/)
 - The evolutionary history of 2,658 cancers. [Gerstung et al, 2020](https://www.nature.com/articles/s41586-019-1907-7) 
