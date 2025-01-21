@@ -1,6 +1,6 @@
 # Somatic SVs prediction
 
-## 1. Calls SVs from 3 tools
+## 1. Call SVs from 3 tools
 ### DELLY (run parallely)
 `src/delly call -x excludeTemplates/human.hg38.excl.tsv -g hg38_ref/hg38full.fa -o Sample-delly.bcf  Sample.cs.rmdup.bam`
 ### TIDDIT
@@ -10,18 +10,18 @@
 ## 2. Somatic SVs from each tool
 Group all files in three folders, TIDDIT, DELLY and SVABA with corresponding files in each folder, requires SURVIVOR
 ### DELLY
-`for i in *.bcf; do bcftools view $i > $i".vcf"; done
+- `for i in *.bcf; do bcftools view $i > $i".vcf"; done
 for i in *.bcf.vcf; do bcftools view -f PASS $i > $i".filtered.vcf"`
-- transfer normals in normals folder
-`bash somaticDELLY.sh`
+- transfer normals to normals folder
+- `bash somaticDELLY.sh`
 
 ### TIDDIT
 - `grep -E "#|PASS" input.vcf > output.filtered.vcf`
-- transfer normals in normals folder
+- transfer normals to normals folder
 - `bash somaticTIDDIT.sh`
 
 ### SVABA
-- transfer normals in normals folder
+- transfer normals to normals folder
 - `bash somaticSVABA.sh`
 
 ## 3. Merging using SURVIVOR ####
